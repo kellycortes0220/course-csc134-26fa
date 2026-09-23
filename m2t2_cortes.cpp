@@ -14,7 +14,7 @@ int main () {
     // should also handle sales tax (8%)
 
     // Declare our variables
-    string item = "Taco";
+    string item = "🌮 Taco";
     double item_price = 5.99;
     double tax_percent = 0.08; // 8% is 8/100
     double tax_amount;         // tax in $
@@ -33,7 +33,13 @@ int main () {
 
     // Print the receipt
     cout << setprecision(2) << fixed;
-    cout << total << endl;
+    cout << "Thank you for shopping with us" << endl;
+    cout << "------------------------------" << endl;
+    cout << item << "\t\t$" << item_price      << endl;
+    cout << "Tax" << "\t\t$" << tax_amount     << endl;
+    cout << "------------------------------" << endl;
+    cout << "Total" << "\t\t$" << total << endl;
+    cout << endl;
 
     return 0; // no errors
 }
