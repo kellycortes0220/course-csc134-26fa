@@ -51,8 +51,8 @@ int main(){
     // Show the account number to the holder
     cout << "Account Number: " << account_number << endl;
 
-    // Formatting: Set all numbers to 2 decimal places
-    cout << setprecision(2) << fixed;
+    // Set the numbers for banking transactions to 2 decimal places
+    cout << setprecision(2) << fixed << showpoint;
 
     // Give the result to the account holder
     cout << "Thank you for your transaction, " << full_name << endl;
@@ -78,7 +78,7 @@ double length,  // The crate's length
        charge,  // The customer charge for the crate
        profit;  // The profit made on the crate
 
-// Set the desire output formatting for numbers.
+// Set the desire output formatting for numbers of the crate.
 cout << setprecision(2) << fixed << showpoint;
 
 // Prompt the user for the crate's length, width, and height
@@ -103,5 +103,51 @@ cout << volume << " cubic feet.\n";
 cout << "Cost to build: $" << cost << endl;
 cout << "Charge to customer: $" << charge << endl;
 cout << "Profit: $" << profit << endl;
+
+// Now onto the third question
+// this program will calculate pizza leftovers
+
+// Set up all variables
+double total_slices;
+double pizzas_ordered;
+double slices_per_pizza;
+double slices_eaten;
+double number_of_visitors;
+double leftover_slices;
+
+// Prompt the user for the pizzas ordered, slices per pizza and number of visitors coming
+cout << "Enter the number of pizzas ordered: ";
+cin >> pizzas_ordered;
+cout << "Now, enter the number of slices per pizza: ";
+cin >> slices_per_pizza;
+cout << "Finally, enter the number of visitors coming: ";
+cin >> number_of_visitors;
+
+// Calculate the total slices, slices eaten and leftover slices
+total_slices = pizzas_ordered * slices_per_pizza;
+slices_eaten = number_of_visitors * 3;
+leftover_slices = total_slices - slices_eaten;
+
+// Display the calculated data with no decimal places
+cout << fixed << setprecision(0);
+cout << "The total slices of pizza you will have from the beginning are " << total_slices << endl;
+cout << "The total of slices that will be eaten by the visitors are " << slices_eaten << endl;
+cout << "The total number of leftover slices of pizza is " << leftover_slices << endl;
+
+// Now onto the fourth question
+// This program will write a cheer program
+// Set up all variables
+string lets_go = "Let's go, ";
+string school_name = "FTCC";
+string team_name = "Trojans";
+string cheerOne = lets_go + school_name + "!";
+string cheerTwo = lets_go + team_name + "!";
+
+// Display the cheer program
+cout << cheerOne << endl;
+cout << cheerOne << endl;
+cout << cheerOne << endl;
+cout << cheerTwo << endl;
+
 return 0; // no errors
 }
