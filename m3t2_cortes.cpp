@@ -1,7 +1,7 @@
 // CSC 134
-// M3 Random Numbers Example
-// norrisa
-// 2/19/2025
+// M3T2 Random Numbers Example
+// Kelly Cortes
+// 10/7/2026
 // Start with dice rolls
 
 
